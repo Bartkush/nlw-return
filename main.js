@@ -1,6 +1,6 @@
 window.addEventListener('scroll', onScroll)
+const navigation = document.getElementById('navigation')
 
-onScroll()
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
@@ -10,6 +10,8 @@ function onScroll() {
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
 }
+
+onScroll()
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2
